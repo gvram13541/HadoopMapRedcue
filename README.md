@@ -1,5 +1,5 @@
-# Hadoop MapReduce using MRJob in Python <hr>
--> What are the programming languages that supports MapReduce Programming? 
+# Hadoop MapReduce using MRJob in Python
+What are the programming languages that supports MapReduce Programming? <hr>
 MapReduce programming can be implemented in a variety of programming languages, leveraging different frameworks and tools. Here are some of the languages commonly used for writing MapReduce programs:
 
 1. **Java**: Java is the primary language for writing MapReduce programs, especially in the Hadoop framework. The Hadoop MapReduce API is designed with Java, making it a natural choice for developing MapReduce applications.
