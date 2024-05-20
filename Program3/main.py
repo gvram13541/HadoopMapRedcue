@@ -2,12 +2,13 @@
 
 from mrjob.job import MRJob
 import csv
+import sys
 
 class MREarthquake(MRJob):
     def mapper(self,_,line):
         row = next(csv.reader([line]))
         
-        if not row[6].isdigit():
+        if row[9] == "Region":
             return
         
         region = row[9]
@@ -15,6 +16,8 @@ class MREarthquake(MRJob):
         depth = row[7]
         latitude = row[4]
         longitude = row[5]
+        
+        # sys.stderr.write((region + '\n').encode())
 
         yield region, (magnitude, depth, latitude, longitude)
         
